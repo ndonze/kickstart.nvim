@@ -31,4 +31,13 @@ return {
       end, { desc = '[D]ebug [L]ast test' })
     end,
   },
+  {
+    'klen/nvim-test',
+    config = function()
+      require('nvim-test').setup {}
+
+      vim.keymap.set('n', '<leader>rtn', '<cmd> TestNearest <cr>', { desc = '[R]un [T]est [N]earest' })
+      vim.keymap.set('n', '<leader>rtf', '<cmd> TestFile <cr>', { desc = '[R]un [T]est [F]ile' })
+    end,
+  },
 }
