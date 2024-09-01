@@ -582,6 +582,8 @@ require('lazy').setup({
           },
         },
 
+        templ = {},
+
         tailwindcss = {},
         -- pyright = {},
         -- rust_analyzer = {},
